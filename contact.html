@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Website</title>
+  <link rel="stylesheet" href="101.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Gamers</a>
+    <ul class="nav">
+      <li><a href="101.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="action">
+      <div class="searchBx">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <input type="text" placeholder="Search Games">
+      </div>
+    </div>
+    <div class="toggleMenu"></div>
+  </header>
+
+  <!-- Contact  -->
+
+  <div class="container">
+    <h1>Connect with Us</h1>
+    <p>We would love to respond to your queries and help you succed.<br> Feel 
+        free to get in touch with us.
+    </p>
+
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Send your request</h3>
+
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label >Name</label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label >Phone</label>
+                        <input type="text" placeholder="+91 8989 666 550">
+                    </div>
+                    
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label >Email</label>
+                        <input type="text" placeholder="your@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label >Subject</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="your message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>gamers@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td>+91 8989 666 550</td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td>Mathurai apt. Fl A wing 305<br>
+                        kondhawe Dhawade ,Pune-23,<br>
+                        Maharashtra
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+  <!-- About -->
+
+  <div class="about">
+    <div class="contentBx">
+      <h2>About Us</h2>
+      <p>Welcome to Gamers, your ultimate online gaming destination! At Gammers, we are passionate gamers dedicated to creating a vibrant and thrilling gaming community for players of all levels.
+        Our mission is to provide a seamless and immersive gaming experience, offering a wide array of captivating games across various genres. 
+        Whether you're a casual gamer looking for quick entertainment or a hardcore enthusiast seeking competitive challenges, Gammers has something for everyone.
+      </p>
+      <a href="#">Read more</a>
+    </div>
+    <img src="img/image.png" alt="" style="width: 500px;">
+  </div>
+
+  <script>
+    window.addEventListener('scroll',function(){
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky',window.scrollY > 0);
+    });
+  </script>
+</body>
+</html>
